@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="PruebaTecnicaHits.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PruebaTecnicaHits"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:componentes="using:PruebaTecnicaHits.Views" 
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+
+
+    <Page.Resources>
+        <Style TargetType="PivotHeaderItem">
+            <Setter Property="Visibility" Value="Collapsed"/>
+        </Style>
+    </Page.Resources>
+
+    <Grid>
+        <Pivot x:Name="ProjectViews" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Title="">
+            <PivotItem Header="Principal">
+                <Frame x:Name="MainFrame" />
+            </PivotItem>
+            <PivotItem Header="Pelicula">
+                <Frame x:Name="DetailMovieFrame" />
+            </PivotItem>
+            <PivotItem Header="Reproductor">
+                <Frame x:Name="PlayerFrame" />
+            </PivotItem>
+        </Pivot>
+    </Grid>
+</Page>

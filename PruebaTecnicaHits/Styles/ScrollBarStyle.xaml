@@ -1,0 +1,28 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+
+    <Style TargetType="ScrollViewer" x:Key="ScrollViewerStyle">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ScrollViewer">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <ScrollContentPresenter Grid.Row="0" Grid.Column="0" Name="ScrollContentPresenter"/>
+                        <ScrollBar Name="HorizontalScrollBar" Orientation="Horizontal" Grid.Row="1" Grid.Column="0" Visibility="Collapsed" Height="3" Background="Gray" />
+                        <ScrollBar Name="VerticalScrollBar" Orientation="Vertical" Grid.Row="0" Grid.Column="1" Visibility="Visible" Width="3" Background="Gray" />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,27 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <VisualStateGroup x:Key="AdaptiveNavigationBar">
+        <VisualState x:Name="Narrow">
+            <VisualState.StateTriggers>
+                <AdaptiveTrigger MinWindowWidth="0" />
+            </VisualState.StateTriggers>
+            <VisualState.Setters>
+                <Setter Target="NavigationBar.(Grid.ColumnDefinitions)[0].Width" Value="1*" />
+                <Setter Target="NavigationBar.(Grid.ColumnDefinitions)[1].Width" Value="99*" />
+                <Setter Target="NavigationBar.Margin" Value="0,0,0,0" />
+                <Setter Target="CommandBar.Margin" Value="0,0,0,0" />
+            </VisualState.Setters>
+        </VisualState>
+        <VisualState x:Name="Wide">
+            <VisualState.StateTriggers>
+                <AdaptiveTrigger MinWindowWidth="800" />
+            </VisualState.StateTriggers>
+            <VisualState.Setters>
+                <Setter Target="NavigationBar.(Grid.ColumnDefinitions)[0].Width" Value="25*" />
+                <Setter Target="NavigationBar.(Grid.ColumnDefinitions)[1].Width" Value="75*" />
+                <Setter Target="NavigationBar.Margin" Value="293,0,202,0" />
+                <Setter Target="CommandBar.Margin" Value="293,0,323,0" />
+            </VisualState.Setters>
+        </VisualState>
+    </VisualStateGroup>
+</ResourceDictionary>
