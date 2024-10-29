@@ -31,7 +31,7 @@ namespace PruebaTecnicaHits.ViewModel
                 List<Pelicula> peliculas = await apiService.GetPeliculasSectionAAsync();
 
                 PeliculasSecA.Clear();
-                foreach (var pelicula in peliculas)
+                foreach (Pelicula pelicula in peliculas)
                 {
                     PeliculasSecA.Add(pelicula);
                 }
@@ -50,7 +50,7 @@ namespace PruebaTecnicaHits.ViewModel
                 List<Pelicula> peliculas = await apiService.GetPeliculasSectionBAsync();
 
                 PeliculasSecB.Clear();
-                foreach (var pelicula in peliculas)
+                foreach (Pelicula pelicula in peliculas)
                 {
                     PeliculasSecB.Add(pelicula);
                 }
@@ -69,7 +69,7 @@ namespace PruebaTecnicaHits.ViewModel
                 List<Pelicula> peliculas = await apiService.GetPeliculasSectionCAsync();
 
                 PeliculasSecC.Clear();
-                foreach (var pelicula in peliculas)
+                foreach (Pelicula pelicula in peliculas)
                 {
                     PeliculasSecC.Add(pelicula);
                 }

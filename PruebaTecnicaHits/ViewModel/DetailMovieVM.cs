@@ -26,7 +26,7 @@ namespace PruebaTecnicaHits.ViewModel
                 List<Pelicula> peliculas = await apiService.GetPeliculasSectionDAsync();
 
                 PeliculasSecD.Clear();
-                foreach (var pelicula in peliculas)
+                foreach (Pelicula pelicula in peliculas)
                 {
                     PeliculasSecD.Add(pelicula);
                 }
