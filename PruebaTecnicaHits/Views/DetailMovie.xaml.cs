@@ -68,16 +68,6 @@ namespace PruebaTecnicaHits.Views
             }      
         }
 
-        private void SearchButton_Click(object sender, RoutedEventArgs e)
-        {
-            //SearchBox.Visibility = SearchBox.Visibility == Visibility.Collapsed ? Visibility.Visible : Visibility.Collapsed;
-            //if (SearchBox.Visibility == Visibility.Visible)
-            //{
-            //    SearchBox.Focus(FocusState.Programmatic);
-
-            //}
-        }
-
         private void PaginaPrincipal_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Principal));

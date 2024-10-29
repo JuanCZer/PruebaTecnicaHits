@@ -34,7 +34,7 @@
                 </Grid.ColumnDefinitions>
                 <!-- Logo -->
                 <Grid Grid.Column="0">
-                    <Button Width="235" Margin="65,0,0,0">
+                    <Button Width="235" Margin="65,0,0,0" Click="PaginaPrincipal_Click">
                         <Image Source="../Resources/Images/claro-video.png" HorizontalAlignment="Right" VerticalAlignment="Center" Height="73" Width="222"/>
                     </Button>
                 </Grid>
