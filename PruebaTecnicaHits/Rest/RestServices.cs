@@ -18,6 +18,7 @@ namespace PruebaTecnicaHits.Rest
             _httpClient = new HttpClient();
         }
 
+        //Recuperar Informacion de Peliculas para la seccion A de la pantalla Principal
         public async Task<List<Pelicula>> GetPeliculasSectionAAsync()
         {
             try
@@ -45,6 +46,7 @@ namespace PruebaTecnicaHits.Rest
             }
         }
 
+        //Recuperar Informacion de Peliculas para la seccion B de la pantalla Principal
         public async Task<List<Pelicula>> GetPeliculasSectionBAsync()
         {
             try
@@ -72,6 +74,7 @@ namespace PruebaTecnicaHits.Rest
             }
         }
 
+        //Recuperar Informacion de Peliculas para la seccion C de la pantalla Principal
         public async Task<List<Pelicula>> GetPeliculasSectionCAsync()
         {
             try
@@ -99,6 +102,7 @@ namespace PruebaTecnicaHits.Rest
             }
         }
 
+        //Recuperar Informacion de Peliculas para la seccion D de la pantalla DetaileMovie
         public async Task<List<Pelicula>> GetPeliculasSectionDAsync()
         {
             try

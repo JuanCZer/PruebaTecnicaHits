@@ -37,6 +37,7 @@ namespace PruebaTecnicaHits.Views
         private async void LoadPeliculas()
         {
             await DetailMovieVM.DisplayPeliculasSectionD();
+            //Muestra las peliculas en el componente del carrusel
             PeliculaCarouselSectionD.ItemsSource = DetailMovieVM.PeliculasSecD;
         }
 
@@ -50,6 +51,7 @@ namespace PruebaTecnicaHits.Views
             }
         }
 
+        //Cambia el Tab a DetailMovie con la informacion del Objeto Pelicula recuperado
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             var button = sender as Button;
@@ -60,6 +62,7 @@ namespace PruebaTecnicaHits.Views
             }
         }
 
+        //Cambia el Tab a Reproductor con la informacion del Objeto Pelicula que lo ejecuto
         private void Reproducir_Click(object sender, RoutedEventArgs e)
         {
             if (sender is Button button && button.Tag is Pelicula pelicula)
@@ -68,11 +71,13 @@ namespace PruebaTecnicaHits.Views
             }      
         }
 
+        //Cambia el Tab
         private void PaginaPrincipal_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Principal));
         }
 
+        //Cambia el Tab
         private void Inicio_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Principal));

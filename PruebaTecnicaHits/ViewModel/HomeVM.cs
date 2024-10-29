@@ -23,6 +23,7 @@ namespace PruebaTecnicaHits.ViewModel
             PeliculasSecC = new ObservableCollection<Pelicula>();
         }
 
+        //Guarda los datos recuperados de la peticion en la lista global PeliculasSecA
         public async Task DisplayPeliculasSectionA()
         {
             try
@@ -42,6 +43,7 @@ namespace PruebaTecnicaHits.ViewModel
             }
         }
 
+        //Guarda los datos recuperados de la peticion en la lista global PeliculasSecB
         public async Task DisplayPeliculasSectionB()
         {
             try
@@ -61,6 +63,7 @@ namespace PruebaTecnicaHits.ViewModel
             }
         }
 
+        //Guarda los datos recuperados de la peticion en la lista global PeliculasSecC
         public async Task DisplayPeliculasSectionC()
         {
             try

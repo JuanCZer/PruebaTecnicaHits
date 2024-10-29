@@ -37,13 +37,17 @@ namespace PruebaTecnicaHits.Views
         private async void LoadPeliculas()
         {
             await HomeVM.DisplayPeliculasSectionA();
+            //Muestra las peliculas en el componente del carrusel
             PeliculaCarouselSectionA.ItemsSource = HomeVM.PeliculasSecA;
             await HomeVM.DisplayPeliculasSectionB();
+            //Muestra las peliculas en el componente del carrusel
             PeliculaCarouselSectionB.ItemsSource = HomeVM.PeliculasSecB;
             await HomeVM.DisplayPeliculasSectionC();
+            //Muestra las peliculas en el componente del carrusel
             PeliculaCarouselSectionC.ItemsSource = HomeVM.PeliculasSecC;
         }
 
+        //Cambia el Tab a Reproductor con la informacion del Objeto Pelicula que lo ejecuto
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             var button = sender as Button;
@@ -53,6 +57,8 @@ namespace PruebaTecnicaHits.Views
                 Frame.Navigate(typeof(DetailMovie), pelicula);
             }
         }
+
+        //Cambia el Tab
         private void Inicio_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Principal));

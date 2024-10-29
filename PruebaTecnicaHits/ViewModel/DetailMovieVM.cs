@@ -18,6 +18,7 @@ namespace PruebaTecnicaHits.ViewModel
             PeliculasSecD = new ObservableCollection<Pelicula>();
         }
 
+        //Guarda los datos recuperados de la peticion en la lista global PeliculasSecD
         public async Task DisplayPeliculasSectionD()
         {
             try
